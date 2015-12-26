@@ -1,9 +1,9 @@
 var async = require('async');
 
 sequencer(function() {
-    console.log('Square of 3', /*A*/someAsyncFunction(3).square);
+    console.log('Square of 3', ~~someAsyncFunction(3).square);
     console.log('Just a line');
-    console.log('Now square of 9', /*A*/someAsyncFunction(9).square);
+    console.log('Now square of 9', ~~someAsyncFunction(9).square);
 });
 
 
@@ -25,7 +25,7 @@ function sequencer(func) {
     // break to lines:
     var lines = source.match(/([^;]*);/g);
     
-    var asyncSignature = /(\/\*A\*\/\w*\([^)]*\))/g;
+    var asyncSignature = /(~~\w*\([^)]*\))/g;
 
     async.mapSeries(
         lines, 

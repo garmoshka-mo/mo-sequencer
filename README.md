@@ -1,11 +1,11 @@
 Function inside `sequencer` is parsed as a string.
-All function calls prefixed with `/*A*/` are executed first, and then substituted by resulting value
+All function calls prefixed with `~~` are executed first, and then substituted by resulting value
 
     sequencer(function() {
     
-        console.log('Square of 3', /*A*/someAsyncFunction(3).square);
+        console.log('Square of 3', ~~someAsyncFunction(3).square);
         console.log('Just a line');
-        console.log('Now square of 9', /*A*/someAsyncFunction(9).square);
+        console.log('Now square of 9', ~~someAsyncFunction(9).square);
         
     });
     
