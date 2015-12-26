@@ -18,8 +18,12 @@ All function calls prefixed with `~~` are executed first, and then substituted b
 
 # ToDo
 
-    sequencer(function() {
+- catch:
+````
+sequencer(function() {
         
     }).catch(function(err){
         
     });
+````
+- Pass mo-wire as callback argument
