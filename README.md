@@ -15,3 +15,11 @@ All function calls prefixed with `~~` are executed first, and then substituted b
             done(null, { square: number * number });
         }, 100)
     }
+
+# ToDo
+
+    sequencer(function() {
+        
+    }).catch(function(err){
+        
+    });
