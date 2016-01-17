@@ -18,6 +18,8 @@ All function calls prefixed with `~~` are executed first, and then substituted b
 
 # ToDo
 
+[![Join the chat at https://gitter.im/mojects/mo-sequencer](https://badges.gitter.im/mojects/mo-sequencer.svg)](https://gitter.im/mojects/mo-sequencer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 - catch:
 ````
 sequencer(function() {
