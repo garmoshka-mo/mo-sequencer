@@ -90,6 +90,12 @@ Though it already simplifies async code a lot and looks like a [great potential]
 
 Do not hesitate to [post your random
  thoughts in  chat](https://gitter.im/mojects/mo-sequencer#) and [contribute](https://github.com/mojects/mo-sequencer/wiki/Contribution-guide).
+
+[![Join the chat at https://gitter.im/mojects/mo-sequencer](https://badges.gitter.im/mojects/mo-sequencer.svg)](https://gitter.im/mojects/mo-sequencer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Maybe, here together with you we will build future of async programming! :) Like this dude:
 
 ![Future dude](https://cloud.githubusercontent.com/assets/2452269/12379478/529afea6-bd64-11e5-9fdb-6e166e533559.jpg)
+
+
+
