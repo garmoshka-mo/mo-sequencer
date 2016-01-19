@@ -1,9 +1,21 @@
 {
   "name": "mo-sequencer",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Allows to write inline async calls in js",
+  "main": "mo-sequencer.js",
   "private": false,
   "scripts": {},
   "dependencies": {
     "async": "^1.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojects/mo-sequencer.git"
+  },
+  "author": "garmoshka-mo <dan@dub.ink> (http://garmoshka-mo.blogspot.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mojects/mo-sequencer/issues"
+  },
+  "homepage": "https://github.com/mojects/mo-sequencer#readme"
 }

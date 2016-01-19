@@ -1,6 +1,6 @@
 /*!
- * mo-sequencer ☜(ﾟヮﾟ☜)
- * https://github.com/garmoshka-mo/mo-sequencer
+ * (~˘▾˘)~ mo-sequencer
+ * https://github.com/mojects/mo-sequencer
  *
  * Copyright 2015 garmoshka-mo
  * Released under the MIT license
@@ -9,12 +9,26 @@ module.exports = sequencer;
 
 var async = require('async');
 
-// (°ロ°)☝
+// ☜(ﾟヮﾟ☜)
 // Function inside [sequencer] parsed as a string.
 // All function calls prefixed with ~~ and ~! are executed first,
 // and substituted by resulting value. Prefix types:
 //   ~~ for traditional callback(err, result)
 //   ~! for promises
+
+// Copy-paste template:
+// Please, copy comment when use sequencer, because `~~` and `~!` - 
+// it's new "coordinate system" which may confuse your colleagues.
+/*
+
+  var sequencer = require('mo-sequencer');
+  
+  // (~˘▾˘)~ mo-sequencer: ~~ is call of async function; ~! is call of promise
+  sequencer((__o, __0) => { eval(__o)}, () => {
+  
+  });
+
+*/
 
 function sequencer(executor, func) {
   var raiseRejection, lastError;
@@ -65,7 +79,7 @@ function sequencer(executor, func) {
     if (err) {
       if (raiseRejection) raiseRejection(err);
       else {
-        console.error('sequencer ERROR:', err);
+        console.error('(ノಠ益ಠ)ノ彡┻━┻ sequencer ERROR:', err);
         lastError = err;
       }
       return true;
