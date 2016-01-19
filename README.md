@@ -2,7 +2,7 @@
 
 Library for javascript which allows to write **inline** async calls
 
-## Comparison to `async` style
+Comparison to `async` style:
 
 ![Comparison to async](https://cloud.githubusercontent.com/assets/2452269/12379888/a3ba947e-bd6c-11e5-9c29-7c86e7639aaf.jpg)
 
@@ -57,7 +57,7 @@ node example.js
 ## Current implementation - is prototype
 
 Examples above work well on node and browser.
-Though there are list of limitations ([see how to facilitate for their elimination](https://github.com/mojects/mo-sequencer/wiki/Contribution-guide))
+Though there is list of limitations ([see how to facilitate for their elimination](https://github.com/mojects/mo-sequencer/wiki/Contribution-guide))
 In current prototype following is **not** supported:
 - Not supported: declarations of `var`. (need to declare outside of sequencer, like in [Explanation example](https://github.com/mojects/mo-sequencer#explanation))
 - Not supported: sub-functions in body of sequencer
