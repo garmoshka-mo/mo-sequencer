@@ -1,6 +1,8 @@
 # (~˘▾˘)~ mo-sequencer
 
-## Comparison to `async` style
+Library for javascript which allows to write **inline** async calls
+
+Comparison to `async` style:
 
 ![Comparison to async](https://cloud.githubusercontent.com/assets/2452269/12379888/a3ba947e-bd6c-11e5-9c29-7c86e7639aaf.jpg)
 
@@ -30,34 +32,13 @@ Please, copy comment when use sequencer, because `~~` and `~!` - it's new "coord
 ```
 npm i mo-sequencer --save
 ```
-or
+or for client-side projects:
 ```
 bower i async --save
 bower i mo-sequencer --save
 
 <script type="text/javascript" src="/bower_components/async/dist/async.js"></script>
 <script type="text/javascript" src="/bower_components/mo-sequencer/mo-sequencer.js"></script>
-```
-
-## Usage
-
-```js
-    var someObject, someValue;
-    // (~˘▾˘)~ mo-sequencer: ~~ is call of async function; ~! is call of promise
-    sequencer((__o, __0) => { eval(__o)}, () => {
-        someValue = ~~asyncMultiplier(1);
-        someObject = {
-            value1: ~~asyncMultiplier(10),
-            value2: ~~asyncMultiplier(5)
-        };
-        console.log(someValue, someObject);
-    });
-    
-    function asyncMultiplier(number, callback) {
-        setTimeout(function() {
-            callback(null, number * 2);
-        }, 1);
-    }
 ```
 
 ## Explanation
@@ -80,9 +61,9 @@ node example.js
 ## Current implementation - is prototype
 
 Examples above work well on node and browser.
-Though there are list of limitations ([see how to facilitate for their elimination](https://github.com/mojects/mo-sequencer/wiki/Contribution-guide))
+Though there is list of limitations ([see how to facilitate for their elimination](https://github.com/mojects/mo-sequencer/wiki/Contribution-guide))
 In current prototype following is **not** supported:
-- Not supported: declarations of `var`. (need to declare outside of sequencer, like in [Usage example](https://github.com/mojects/mo-sequencer))
+- Not supported: declarations of `var`. (need to declare outside of sequencer, like in [Explanation example](https://github.com/mojects/mo-sequencer#explanation))
 - Not supported: sub-functions in body of sequencer
 - Not supported: async call inside of another async call (as argument)
 - Not supported: if-conditions/switches/loops
