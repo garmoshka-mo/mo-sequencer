@@ -54,6 +54,7 @@ which we could have in real environment:
 Download repo and check if `example.js` looks cool in your favorite IDE.
 ```
 git clone https://github.com/mojects/mo-sequencer.git
+cd mo-sequencer
 npm i
 node example.js
 ```
