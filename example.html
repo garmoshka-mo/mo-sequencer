@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <title>(~˘▾˘)~ mo-sequencer</title>
+    <meta http-equiv="content-type"
+          content="text/html;charset=utf-8" />
+    <style>
+        body { padding: 50px; font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; max-width: 600px; }
+        a { color: #00B7FF; }
+        .tiny { margin-top: 0; font-size: 0.7rem; }
+    </style>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/1.5.2/async.js"></script>
+    <script type="text/javascript" src="mo-sequencer.js"></script>
+    <script type="application/javascript">
+        window.onload = function() {
+            
+            var someObject, someValue;
+
+            // (~˘▾˘)~ mo-sequencer: ~~ - Call of async function; ~! - promise
+            sequencer(function (__o, __0) { eval(__o)}, function() {
+                someValue = ~~asyncMultiplier(1);
+                someObject = {
+                    value1: ~~asyncMultiplier(10),
+                    value2: ~~asyncMultiplier(5)
+                };
+                output('(~˘▾˘)~ Result of mo-sequencer code:');
+                output('someValue=' + someValue, someObject);
+                output("Don't hesitate to play around with it! ☜(ﾟヮﾟ☜)");
+            });
+
+            function asyncMultiplier(number, callback) {
+                setTimeout(function() {
+                    callback(null, number * 2);
+                }, 1);
+            }
+
+            function output(msg) {
+                var result = document.getElementById("result");
+                var p = document.createElement("p");
+                var newContent = document.createTextNode(msg);
+                p.appendChild(newContent); 
+                result.appendChild(p); 
+            }
+        };
+    </script>
+</head>
+<body>
+<h1>(~˘▾˘)~ mo-sequencer demo</h1>
+<div id="result"></div>
+
+</body>
+</html>

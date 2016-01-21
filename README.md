@@ -32,7 +32,11 @@ npm i mo-sequencer --save
 ```
 or
 ```
+bower i async --save
 bower i mo-sequencer --save
+
+<script type="text/javascript" src="/bower_components/async/dist/async.js"></script>
+<script type="text/javascript" src="/bower_components/mo-sequencer/mo-sequencer.js"></script>
 ```
 
 ## Usage

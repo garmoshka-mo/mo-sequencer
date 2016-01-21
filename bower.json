@@ -1,0 +1,26 @@
+{
+  "name": "mo-sequencer",
+  "description": "Allows to write inline async calls in js",
+  "main": "mo-sequencer.js",
+  "authors": [
+    "garmoshka-mo <dan@dub.ink> (http://garmoshka-mo.blogspot.com/)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "asynchronous",
+    "inline"
+  ],
+  "homepage": "https://github.com/mojects/mo-sequencer",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "sandbox.js"
+  ],
+  "dependencies": {
+    "async": "~1.5.2"
+  }
+}

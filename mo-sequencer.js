@@ -5,9 +5,11 @@
  * Copyright 2015 garmoshka-mo
  * Released under the MIT license
  */
-module.exports = sequencer;
 
-var async = require('async');
+if (typeof module == 'object') {
+  module.exports = sequencer;
+  var async = require('async');
+}
 
 // ☜(ﾟヮﾟ☜)
 // Function inside [sequencer] parsed as a string.
@@ -116,4 +118,5 @@ function sequencer(executor, func) {
   };
 
 }
+
 
