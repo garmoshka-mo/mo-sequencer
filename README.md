@@ -14,19 +14,6 @@ and substituted by resulting value. Prefix types are:
 * `~~` for traditional callback(err, result)
 * `~!` for promises
 
-## Copy-paste template
-
-Please, copy comment when use sequencer, because `~~` and `~!` - it's new "coordinate system" which may confuse your colleagues.
-
-```js
-    var sequencer = require('mo-sequencer');
-
-    // (~˘▾˘)~ mo-sequencer: ~~ is call of async function; ~! is call of promise
-    sequencer((__o, __0) => { eval(__o)}, () => {
-        
-    });
-```
-
 ## Install
 
 ```
@@ -41,10 +28,22 @@ bower i mo-sequencer --save
 <script type="text/javascript" src="/bower_components/mo-sequencer/mo-sequencer.js"></script>
 ```
 
+## Copy-paste template
+
+Please, copy comment when use sequencer, because `~~` and `~!` - it's new "coordinate system" which may confuse your colleagues.
+
+```js
+    var sequencer = require('mo-sequencer');
+
+    // (~˘▾˘)~ mo-sequencer: ~~ is call of async function; ~! is call of promise
+    sequencer((__o, __0) => { eval(__o)}, () => {
+        
+    });
+```
+
 ## Explanation
 
-Let's see explanation of what happens on example, 
-which we could have in real environment:
+Let's see explanation of what happens on example:
 
 ![Explanation](https://cloud.githubusercontent.com/assets/2452269/12378921/fb44610a-bd55-11e5-9db3-1b9574d73aa3.png)
 
@@ -71,17 +70,8 @@ In current prototype following is **not** supported:
 
 ## Contribution
 
-As you can see - prototype has pretty limited abilities.
-Though it already simplifies async code a lot and looks like a [great potential](http://coub.com/view/aedkc)!
+[Contribution page](https://github.com/mojects/mo-sequencer/wiki/Contribution-guide).
 
-Do not hesitate to [post your random
- thoughts in  chat](https://gitter.im/mojects/mo-sequencer#) and [contribute](https://github.com/mojects/mo-sequencer/wiki/Contribution-guide).
+# License 
 
-[![Join the chat at https://gitter.im/mojects/mo-sequencer](https://badges.gitter.im/mojects/mo-sequencer.svg)](https://gitter.im/mojects/mo-sequencer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-Maybe, here together with you we will build future of async programming! :) Like this dude:
-
-![Future dude](https://cloud.githubusercontent.com/assets/2452269/12379478/529afea6-bd64-11e5-9fdb-6e166e533559.jpg)
-
-
-
+MIT
