@@ -1,6 +1,10 @@
 # (~˘▾˘)~ mo-sequencer
 
-Library for javascript which allows to write **inline** async calls
+Library for javascript below ES6, which allows to write **inline** async calls.
+
+For ES6 is preffered to use generators, for example [co](https://github.com/tj/co)
+
+----
 
 Comparison to `async` style:
 
